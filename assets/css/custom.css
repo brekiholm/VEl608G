@@ -1,0 +1,365 @@
+.link-box.industrial{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  margin: 8px 10px 8px 0;
+
+  text-decoration: none;
+  color: var(--text);
+
+  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 10px;
+
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.15),
+    0 10px 25px rgba(0,0,0,0.45);
+}
+
+.link-box.industrial:hover{
+  border-color: var(--accent);
+  color: #1ab3f7;
+  transform: translateY(-1px);
+}
+
+
+
+
+#header-wrapper {
+  background:
+    url("images/bg01.png"),
+    url("images/gear.2.jpg");
+  background-position: top left, center center;
+  background-size: auto, cover;
+  padding: 3em 0;
+}
+
+
+
+#banner h2,
+#banner p {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.85);
+}
+
+
+/* Fjarlægir 2 línurnar (border) ofan/neðan fyrirsögnina */
+#banner h2 {
+  border: 0 !important;
+}
+
+/* Öryggisnet: ef template-ið bætir líka við extra línum */
+#banner h2::before,
+#banner h2::after {
+  display: none !important;
+  content: none !important;
+  border: 0 !important;
+}
+
+
+#header .inner {
+  background-color: rgba(15, 18, 22, 0.95) !important;
+}
+
+/* ================================
+   PREMIUM SECTION: ÁFANGALÝSING
+   ================================ */
+
+/* Allur kaflinn */
+.wrapper,
+.wrapper.style1,
+#main-wrapper {
+  background-color: #f6f7f8;
+}
+
+/* Fyrirsögn */
+#main-wrapper h2 {
+  font-size: 2.6em;
+  letter-spacing: 0.18em;
+  font-weight: 800;
+  color: #2b2f33;
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+/* Subtle underline (engineering vibe) */
+#main-wrapper h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    #4f6f8f,
+    #9bb7cf
+  );
+  margin: 0.6em auto 0;
+  border-radius: 2px;
+}
+
+/* Undirtexti (lýsingin) */
+#main-wrapper p {
+  font-size: 1.05em;
+  color: #5b6168;
+  line-height: 1.9em;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.02em;
+}
+
+/* Listinn sjálfur */
+#main-wrapper ul,
+#main-wrapper ol {
+  max-width: 820px;
+  margin: 3em auto 0;
+  padding-left: 0;
+}
+
+/* Listaatriði = clean tech cards */
+#main-wrapper ul li,
+#main-wrapper ol li {
+  position: relative;
+  padding: 1.1em 1.2em 1.1em 2.2em;
+  margin-bottom: 0.8em;
+
+  background: rgba(255,255,255,0.75);
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.05),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  font-size: 0.95em;
+  color: #3a3f44;
+}
+
+/* Industrial accent (litla línan vinstra megin) */
+#main-wrapper ul li::before,
+#main-wrapper ol li::before {
+  content: "";
+  position: absolute;
+  left: 0.8em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: linear-gradient(
+    180deg,
+    #4f6f8f,
+    #9bb7cf
+  );
+  border-radius: 2px;
+}
+
+
+
+
+/* =========================
+   CLEAN / BASIC ABOUT PAGE
+   ========================= */
+
+/* Um mig wrapper */
+.about-page {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+/* Fyrirsagnir – hreinar, vinstra stilltar */
+.about-page h2 {
+  font-size: 2.2em;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #2b2f33;
+  margin-bottom: 1.4em;
+  text-align: left;
+}
+
+/* Fjarlægir ALLT skraut af fyrirsögnum */
+.about-page h2::before,
+.about-page h2::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Texti – editorial readability */
+.about-page p {
+  max-width: 65ch;          /* lykilatriði */
+  font-size: 1.05em;
+  line-height: 1.95em;
+  color: #4a525a;
+  margin: 0 0 1.2em 0;
+  text-align: left;
+}
+
+/* Heldur texta og takka í sömu breidd */
+.about-page section,
+.about-page article,
+.about-page .container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Takki – alveg basic, enginn glans */
+.about-page .button {
+  background: #2b2f33 !important;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 0.75em 1.6em;
+  font-size: 0.9em;
+  letter-spacing: 0.12em;
+}
+
+/* Hover: bara aðeins ljósari */
+.about-page .button:hover {
+  background: #3a4046 !important;
+}
+
+/* Mobile: aðeins minni texti */
+@media (max-width: 736px) {
+  .about-page h2 {
+    font-size: 1.8em;
+  }
+
+  .about-page p {
+    font-size: 1em;
+  }
+}
+
+
+
+
+/* =========================
+   CLEAN PROJECT PAGE (Verkefni 1)
+   ========================= */
+
+/* 1) Toppur: miðja og clean */
+.project-page h2,
+.project-page header.major h2 {
+  text-align: center;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  font-size: 2.4em;
+  margin-bottom: 0.4em;
+}
+
+.project-page header.major p {
+  text-align: center;
+  letter-spacing: 0.10em;
+  font-weight: 700;
+  color: #606770;
+  margin-top: 0;
+}
+
+/* Fjarlægja allt skraut/underline á header (bláa línan o.þ.h.) */
+.project-page header.major:after,
+.project-page header.major h2:before,
+.project-page header.major h2:after {
+  display: none !important;
+  content: none !important;
+}
+
+/* 2) Kaflar: clean spacing + max width fyrir læsileika */
+.project-page section,
+.project-page article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-page p {
+  max-width: 70ch;        /* lykilatriði: ekki of breiður texti */
+  margin: 0.8em auto;
+  font-size: 1.05em;
+  line-height: 1.95em;
+  color: #4a525a;
+  text-align: left;
+}
+
+/* 3) Kaflafyrirsagnir: vinstra stilltar, aðeins “premium” */
+.project-page h3 {
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+  font-size: 1.25em;
+  letter-spacing: 0.12em;
+  color: #2b2f33;
+  text-align: left;
+}
+
+/* Fjarlægir óþarfa línur ef template setur hr eða border */
+.project-page hr {
+  display: none;
+}
+
+.project-page section {
+  border: 0 !important;
+}
+
+/* Mobile fínstilling */
+@media (max-width: 736px) {
+  .project-page h2,
+  .project-page header.major h2 {
+    font-size: 1.9em;
+  }
+
+  .project-page p {
+    font-size: 1em;
+  }
+}
+
+#banner {
+  text-align: center;
+}
+
+#banner p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/* Miðja allt í banner */
+#banner {
+  text-align: center;
+}
+
+/* Laga undirtexta: fjarlægja offset + miðja “boxið” sjálft */
+#banner p {
+  float: none !important;
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+
+  display: inline-block;      /* miðjast sem “box” */
+  text-align: center;         /* textinn inni líka miðjaður */
+
+  margin: 1.2em auto 0 !important;
+  padding: 0 !important;      /* template er oft með padding sem hliðrar */
+  width: auto !important;
+}
+#banner p {
+  line-height: 1.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

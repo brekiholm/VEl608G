@@ -349,9 +349,12 @@
   line-height: 1.6em;
 }
 
-
-
-
+.subheading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1f2a44;
+}
 
 
 
